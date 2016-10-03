@@ -1,13 +1,16 @@
 import { h, Component } from 'preact';
 import style from './style';
 import Foto from './foto';
+//https://github.com/developit/hn_minimal/blob/master/src/App.js
 
 const asJson = r => r.json();
 
 export default class Galeria extends Component {
 
+	state = { fotos: [] };
+
     cargarFotos() {
-		fetch(`data/galerias.json`).then(asJson)
+		fetch('data/galerias.json').then(asJson)
 			.then( fotos => this.setState({ fotos }) );
 	}
 
@@ -28,8 +31,8 @@ export default class Galeria extends Component {
 				<h1>Galeria: { estilo }</h1>
 				<p>Este es el Galeria del usuario llamado { estilo }.</p>
 				<div>'route' Galeria montada</div>
-                    { fotos.map( (fotos, i) => (
-						<div>{fotos.id}</div>
+                    { 	fotos.map( (fotos, i) => (
+						<div>{fotos.titulo}</div>
 					)) }
 			</div>
 		);
