@@ -1,22 +1,27 @@
-@import 'helpers';
+/* ==========================================================================
 
-html, body {
-	height: 100%;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	background: #FAFAFA;
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	color: #444;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
+// Base Stylesheet - http://getbase.org
+// Author: Matthew Hartman - http://www.matthewhartman.com.au/
+// Version: 3.2.1 - Last Updated: September 10, 2016
 
-* {
-	box-sizing: border-box;
-}
+========================================================================== */
 
-#app {
-	height: 100%;
+@import "base/_variables";
+
+@import "base/_mixins";
+@import "base/_resets";
+
+@import "base/_typography";
+@import "base/_lists";
+@import "base/_blockquotes";
+@import "base/_tables";
+@import "base/_code";
+@import "base/_forms";
+@import "base/_buttons";
+
+@import "base/_grid";
+/* @import "base/_animations"; */
+
+@media print {
+  @import "base/_print";
 }

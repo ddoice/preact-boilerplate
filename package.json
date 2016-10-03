@@ -1,6 +1,6 @@
 {
-  "name": "preact-boilerplate",
-  "version": "5.0.0",
+  "name": "espaher",
+  "version": "1.0.0",
   "description": "Ready-to-go Preact starter project powered by webpack.",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --progress",
@@ -72,5 +72,9 @@
     "preact-compat": "^3.0.0",
     "preact-router": "^2.0.0",
     "proptypes": "^0.14.3"
+  },
+  "main": "webpack.config.babel.js",
+  "directories": {
+    "test": "test"
   }
 }

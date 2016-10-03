@@ -31,11 +31,11 @@ export default class Profile extends Component {
 	render({ user }, { time, count }) {
 		return (
 			<div class={style.profile}>
-				<h1>Profile: { user }</h1>
-				<p>This is the user profile for a user named { user }.</p>
+				<h1>Perfil: { user }</h1>
+				<p>Este es el perfil del usuario llamado { user }.</p>
 
-				<div>Current time: { time }</div>
-				<div>Profile route mounted { count } times.</div>
+				<div>Tiempo: { time }</div>
+				<div>'route' Perfil montada { count } veces.</div>
 			</div>
 		);
 	}

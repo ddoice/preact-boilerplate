@@ -4,6 +4,7 @@ import { Router } from 'preact-router';
 import Header from './header';
 import Home from './home';
 import Profile from './profile';
+import Galeria from './galeria';
 
 
 export default class App extends Component {
@@ -23,6 +24,8 @@ export default class App extends Component {
 					<Home path="/" />
 					<Profile path="/profile/" user="me" />
 					<Profile path="/profile/:user" />
+					<Galeria path="/galeria/" estilo="clasico" />
+					<Galeria path="/galeria/:estilo" />
 				</Router>
 			</div>
 		);

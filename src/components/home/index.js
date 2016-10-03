@@ -5,8 +5,8 @@ export default class Home extends Component {
 	render() {
 		return (
 			<div class={style.home}>
-				<h1>Home</h1>
-				<p>This is the Home component.</p>
+				<h1>Keli</h1>
+				<p>Este es el componente Keli.</p>
 			</div>
 		);
 	}
