@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
 import style from './style';
-import Foto from './foto';
+import Fotos from './fotos';
 //https://github.com/developit/hn_minimal/blob/master/src/App.js
 
 const asJson = r => r.json();
@@ -27,13 +27,16 @@ export default class Galeria extends Component {
 	// Note: `user` comes from the URL, courtesy of our router
 	render({ estilo }, { fotos }) {
 		return (
-			<div class={style.profile}>
-				<h1>Galeria: { estilo }</h1>
-				<p>Este es el Galeria del usuario llamado { estilo }.</p>
-				<div>'route' Galeria montada</div>
-                    { 	fotos.map( (fotos, i) => (
-						<div>{fotos.titulo }</div>
-					)) }
+			<div class="container">
+				<div class={style.fotos}>
+					<h6>FOTOS</h6>
+					<h2>{ estilo }</h2>
+					<div class="row">
+						{ 	fotos.map( (fotos, i) => (
+							<Fotos foto={fotos}/>
+						)) }
+					</div>
+				</div>
 			</div>
 		);
 	}

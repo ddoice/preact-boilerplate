@@ -6,13 +6,17 @@ export default class Header extends Component {
 	render() {
 		return (
 			<header class={style.header}>
-				<h1>Espaher Cocinas</h1>
-				<nav>
-					<Link href="/">Home</Link>
-					<Link href="/profile">Yo</Link>
-					<Link href="/galeria">Galeria</Link>
-					<Link href="/profile/john">Perico</Link>
-				</nav>
+				<div class={style.container}>
+					<h5>Espaher Cocinas</h5>
+					<nav class={style.nav}>
+						<ul>
+							<Link href="/">Home</Link>
+							<Link href="/profile">Yo</Link>
+							<Link href="/galeria">Galeria</Link>
+							<Link href="/profile/john">Perico</Link>
+						</ul>
+					</nav>
+				</div>
 			</header>
 		);
 	}
