@@ -32,7 +32,7 @@ export default class Galeria extends Component {
 				<p>Este es el Galeria del usuario llamado { estilo }.</p>
 				<div>'route' Galeria montada</div>
                     { 	fotos.map( (fotos, i) => (
-						<div>{fotos.titulo}</div>
+						<div>{fotos.titulo }</div>
 					)) }
 			</div>
 		);
