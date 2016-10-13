@@ -36,13 +36,15 @@ export default class Galeria extends Component {
 				return el.tipo.split(',').indexOf(this.estilo) !== -1 || el.tags.split(',').indexOf(this.estilo) !== -1; 
 		}
 
-		function orderAleatorio(fotos) {
-			var copia = fotos.splice(0);
+		function orderAleatorio(fot) {
+			console.dir(fot);
+			var copia = fot.splice(0);
 			var nuevo = [];
 			for(var n = 0; n< copia.length; n++) {
 				nuevo.push(copia.splice(Math.floor(Math.random() * copia.length),1)[0]);
 				console.log('iter'+n)
 			}
+			console.dir(nuevo);
 			return nuevo;
 		}
 
